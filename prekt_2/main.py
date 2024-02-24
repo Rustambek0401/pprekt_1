@@ -2,9 +2,9 @@ import psycopg2 as psql
 import os
 from dotenv import load_dotenv
 load_dotenv()
-class DataBase:
+class Data_Base:
     @staticmethod
-    def datbase(query, type):
+    def DataBase(query, type):
         postgres = psql.connect(
         database=os.getenv('db_name'),
         host = os.getenv('db_host'),
